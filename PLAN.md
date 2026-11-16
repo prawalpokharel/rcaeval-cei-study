@@ -154,7 +154,8 @@ spend is checked against the billing report after each stage.
    1). The shipped `pc_pagerank` would fall back to column order there too.
 3. **15 Nov, 22:25, before any result was analysed.** Compared every HF case with the
    Zenodo file `main.py` reads (`evidence/source_compare.json`). RE2 and RE3: the
-   method input is identical for 477 cases, and HF has fewer rows in the window for
+   method input is identical for 355 of 360 cases (3 RE3-TT cases are named differently and
+   could not be matched), and HF has fewer rows in the window for
    `re2ob_checkoutservice_cpu_2` and `re2ob_checkoutservice_mem_2`. RE1-OB: 122 of 125
    identical (the two defects above, and `re1ob_checkoutservice_cpu_4` missing 21
    rows). **RE1-SS and RE1-TT differ entirely**: HF has the curated service-level

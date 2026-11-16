@@ -28,7 +28,7 @@ Why CEI fails here: its entropy term measures how spread a metric's values are o
 ## Found along the way (reported upstream)
 
 1. **RCAEval's random-walk head ignores the graph.** `pc_randomwalk` and `granger_randomwalk` give identical rankings on all 579 cases where both graphs exist. `random_walk()` starts every node at score 0, so every transition is uniform (`experiments/randomwalk_demo.py`).
-2. **The Hugging Face release differs from the Zenodo cases `main.py` reads.** One `inject_time.txt` is truncated, four cases are missing rows in the window, and RE1-SS and RE1-TT carry different metric columns (`evidence/source_compare.json`). RE2 and RE3 match exactly for 477 cases.
+2. **The Hugging Face release differs from the Zenodo cases `main.py` reads.** One `inject_time.txt` is truncated, four cases are missing rows in the window, and RE1-SS and RE1-TT carry different metric columns (`evidence/source_compare.json`). 355 of the 360 RE2 and RE3 cases match exactly.
 
 ## Checks
 
