@@ -52,7 +52,7 @@ modal run --detach experiments/modal_app.py --stage pipeline --suite ALL
 modal run experiments/modal_app.py --stage analyze
 ```
 
-The study cost $8 to $9 of Modal CPU time. Data comes from the RCAEval Hugging Face release (MIT, revision `afeacb1`) and the Zenodo records 13305663 and 14590730 (CC BY 4.0). Graph building uses RCAEval's own PC (causal-learn) and Granger (statsmodels) code.
+The study cost about $8 of Modal CPU time. Data comes from the RCAEval Hugging Face release (MIT, revision `afeacb1`) and the Zenodo records 13305663 and 14590730 (CC BY 4.0). Graph building uses RCAEval's own PC (causal-learn) and Granger (statsmodels) code.
 
 ## CEI reference
 
