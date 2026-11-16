@@ -1,0 +1,80 @@
+{
+ "zenodo-13305663/online-boutique.zip:re1ob_currencyservice_loss_1": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1693314223",
+  "rows": 721,
+  "tmin": 1693313863,
+  "tmax": 1693314583,
+  "before": 360,
+  "after": 361
+ },
+ "zenodo-13305663/online-boutique.zip:re1ob_productcatalogservice_cpu_3": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1685373255",
+  "rows": 4201,
+  "tmin": 1685371155,
+  "tmax": 1685375355,
+  "before": 2100,
+  "after": 2101
+ },
+ "zenodo-13305663/online-boutique.zip:re1ob_currencyservice_loss_2": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1692646911",
+  "rows": 721,
+  "tmin": 1692646551,
+  "tmax": 1692647271,
+  "before": 360,
+  "after": 361
+ },
+ "zenodo-14590730/RE1-OB.zip:re1ob_currencyservice_loss_1": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1693314223",
+  "rows": 721,
+  "tmin": 1693313863,
+  "tmax": 1693314583,
+  "before": 360,
+  "after": 361
+ },
+ "zenodo-14590730/RE1-OB.zip:re1ob_productcatalogservice_cpu_3": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1685373255",
+  "rows": 4201,
+  "tmin": 1685371155,
+  "tmax": 1685375355,
+  "before": 2100,
+  "after": 2101
+ },
+ "zenodo-14590730/RE1-OB.zip:re1ob_currencyservice_loss_2": {
+  "files": [
+   "",
+   "data.csv",
+   "inject_time.txt"
+  ],
+  "inject_time_raw": "1692646911",
+  "rows": 721,
+  "tmin": 1692646551,
+  "tmax": 1692647271,
+  "before": 360,
+  "after": 361
+ }
+}

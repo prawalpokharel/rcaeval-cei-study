@@ -1,0 +1,92 @@
+{
+ "cases": [
+  "re1ob_adservice_cpu_1",
+  "re1ob_cartservice_disk_3",
+  "re1ob_checkoutservice_mem_5",
+  "re1ob_productcatalogservice_disk_2",
+  "re1ss_carts_mem_4",
+  "re1ss_orders_disk_1",
+  "re1ss_payment_mem_3",
+  "re1tt_ts-auth-service_delay_5",
+  "re1tt_ts-order-service_mem_2",
+  "re1tt_ts-train-service_delay_4"
+ ],
+ "per_method": {
+  "pc_pagerank": {
+   "equal": 8,
+   "compared": 8,
+   "graph_missing": 2
+  },
+  "granger_pagerank": {
+   "equal": 8,
+   "compared": 9,
+   "graph_missing": 1
+  },
+  "pc_randomwalk": {
+   "equal": 8,
+   "compared": 8,
+   "graph_missing": 2
+  },
+  "granger_randomwalk": {
+   "equal": 9,
+   "compared": 9,
+   "graph_missing": 1
+  },
+  "pc_cei": {
+   "equal": 8,
+   "compared": 8,
+   "graph_missing": 2
+  },
+  "pc_cei_pagerank": {
+   "equal": 8,
+   "compared": 8,
+   "graph_missing": 2
+  },
+  "granger_cei": {
+   "equal": 8,
+   "compared": 9,
+   "graph_missing": 1
+  },
+  "granger_cei_pagerank": {
+   "equal": 8,
+   "compared": 9,
+   "graph_missing": 1
+  },
+  "baro": {
+   "equal": 10,
+   "compared": 10,
+   "graph_missing": 0
+  },
+  "nsigma": {
+   "equal": 10,
+   "compared": 10,
+   "graph_missing": 0
+  }
+ },
+ "mismatches": [
+  [
+   "re1ob_adservice_cpu_1",
+   "granger_pagerank"
+  ],
+  [
+   "re1ob_adservice_cpu_1",
+   "granger_cei"
+  ],
+  [
+   "re1ob_adservice_cpu_1",
+   "granger_cei_pagerank"
+  ]
+ ],
+ "recheck_same_cpu": {
+  "re1ob_adservice_cpu_1": {
+   "granger_entries_differ": 0,
+   "head_on_cached_equals_e2e": true,
+   "head_on_fresh_equals_e2e": true
+  },
+  "re1ss_payment_mem_3": {
+   "granger_entries_differ": 0,
+   "head_on_cached_equals_e2e": true,
+   "head_on_fresh_equals_e2e": true
+  }
+ }
+}

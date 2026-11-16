@@ -1,0 +1,416 @@
+[
+ {
+  "case": "re1ob_adservice_cpu_1",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 2.2
+   },
+   "granger_pagerank": {
+    "equal": false,
+    "seconds": 9.8
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 2.0
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 9.6
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 2.3
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 2.0
+   },
+   "granger_cei": {
+    "equal": false,
+    "seconds": 9.6
+   },
+   "granger_cei_pagerank": {
+    "equal": false,
+    "seconds": 9.7
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.0
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1ob_cartservice_disk_3",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 5.8
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 10.6
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 5.4
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 11.2
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 5.5
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 5.4
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 10.7
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 10.7
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1ob_checkoutservice_mem_5",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 1.9
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 8.2
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 1.8
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 8.1
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 1.9
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 1.8
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 8.1
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 8.1
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.0
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1ob_productcatalogservice_disk_2",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 3.5
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 12.2
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 3.5
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 12.3
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 3.6
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 3.5
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 12.2
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 12.1
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.1
+   }
+  }
+ },
+ {
+  "case": "re1ss_carts_mem_4",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 4.4
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 12.9
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 4.0
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 13.1
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 4.0
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 4.6
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 12.6
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 12.8
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1ss_orders_disk_1",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 4.7
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 13.2
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 4.2
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 12.4
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 4.3
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 4.4
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 12.2
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 12.0
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1ss_payment_mem_3",
+  "results": {
+   "pc_pagerank": "graph not built",
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 14.1
+   },
+   "pc_randomwalk": "graph not built",
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 14.1
+   },
+   "pc_cei": "graph not built",
+   "pc_cei_pagerank": "graph not built",
+   "granger_cei": {
+    "equal": true,
+    "seconds": 14.3
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 14.2
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.0
+   }
+  }
+ },
+ {
+  "case": "re1tt_ts-auth-service_delay_5",
+  "results": {
+   "pc_pagerank": "graph not built",
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 179.0
+   },
+   "pc_randomwalk": "graph not built",
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 179.6
+   },
+   "pc_cei": "graph not built",
+   "pc_cei_pagerank": "graph not built",
+   "granger_cei": {
+    "equal": true,
+    "seconds": 182.0
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 181.6
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.2
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.2
+   }
+  }
+ },
+ {
+  "case": "re1tt_ts-order-service_mem_2",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 174.6
+   },
+   "granger_pagerank": {
+    "equal": true,
+    "seconds": 106.4
+   },
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 172.2
+   },
+   "granger_randomwalk": {
+    "equal": true,
+    "seconds": 107.8
+   },
+   "pc_cei": {
+    "equal": true,
+    "seconds": 171.7
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 173.1
+   },
+   "granger_cei": {
+    "equal": true,
+    "seconds": 106.2
+   },
+   "granger_cei_pagerank": {
+    "equal": true,
+    "seconds": 106.7
+   },
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.1
+   }
+  }
+ },
+ {
+  "case": "re1tt_ts-train-service_delay_4",
+  "results": {
+   "pc_pagerank": {
+    "equal": true,
+    "seconds": 352.0
+   },
+   "granger_pagerank": "graph not built",
+   "pc_randomwalk": {
+    "equal": true,
+    "seconds": 394.9
+   },
+   "granger_randomwalk": "graph not built",
+   "pc_cei": {
+    "equal": true,
+    "seconds": 372.1
+   },
+   "pc_cei_pagerank": {
+    "equal": true,
+    "seconds": 371.9
+   },
+   "granger_cei": "graph not built",
+   "granger_cei_pagerank": "graph not built",
+   "baro": {
+    "equal": true,
+    "seconds": 0.1
+   },
+   "nsigma": {
+    "equal": true,
+    "seconds": 0.1
+   }
+  }
+ }
+]

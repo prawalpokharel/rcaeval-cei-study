@@ -1,0 +1,7 @@
+fault,n,ours,published,match_2dp
+cpu,15,0.72,0.72,True
+mem,15,0.9866666666666667,0.99,True
+disk,15,1.0,1.0,True
+socket,15,0.8266666666666668,0.83,True
+delay,15,0.6266666666666667,0.63,True
+loss,15,0.6399999999999999,0.64,True

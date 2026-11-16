@@ -1,0 +1,4 @@
+chain     ['svc0_cpu', 'svc3_cpu', 'svc4_cpu', 'svc5_cpu', 'svc2_cpu', 'svc1_cpu']
+star      ['svc0_cpu', 'svc3_cpu', 'svc4_cpu', 'svc5_cpu', 'svc2_cpu', 'svc1_cpu']
+no edges  ['svc0_cpu', 'svc3_cpu', 'svc4_cpu', 'svc5_cpu', 'svc2_cpu', 'svc1_cpu']
+identical rankings for all three graphs: True

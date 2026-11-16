@@ -1,0 +1,11 @@
+{
+ "apps_logged": 13,
+ "apps_billed": 15,
+ "billed_usd": 7.9922,
+ "by_resource_usd": {
+  "CPU": 5.1213,
+  "Memory": 2.8026,
+  "Network Egress": 0.0683
+ },
+ "through_hour_utc": "2026-11-16T06:00:00"
+}
