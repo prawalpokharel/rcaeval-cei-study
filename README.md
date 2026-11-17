@@ -1,10 +1,10 @@
 # A Centrality-Entropy Index head for RCAEval: a pre-registered null result
 
-A pre-registered test of the Centrality-Entropy Index (CEI) as a graph head in [RCAEval](https://github.com/phamquiluan/RCAEval), the root-cause-analysis benchmark of 735 microservice failure cases (WWW 2025). The result is null, and it is published here as a notebook, as the plan committed to before any run.
+A pre-registered test of the Centrality-Entropy Index (CEI) as a graph head in [RCAEval](https://github.com/phamquiluan/RCAEval), the root-cause-analysis benchmark of 735 microservice failure cases (WWW 2025). The result is null, so as the plan set out before any run, it's published here as a notebook.
 
 ## Result
 
-On all 735 cases, with the same cached causal graph for every head, here is the service-level Avg@5:
+Service-level Avg@5 on all 735 cases, with the same cached causal graph for every head. PC failed on 137 cases (107 timeouts, 30 crashes) and Granger on 41; on those cases every head gets RCAEval's column-order fallback.
 
 | Head | PC graph | Granger graph |
 |---|---|---|
@@ -23,17 +23,17 @@ Pre-registered tests (paired over cases, 95% bootstrap CI, Wilcoxon with Holm co
 
 The committed rule (`PLAN.md`): propose CEI only if it wins on one graph type and loses on neither. Neither head qualifies, so there is no CEI pull request.
 
-Why CEI fails here: its entropy term measures how spread a metric's values are over the window, which does not tell you whether the metric's service caused the fault. Ranked alone, entropy falls below random. Without it, the centrality term beats full CEI on both graphs. In an exploratory check, added after the primary results, it also beats PageRank on Granger graphs (+0.060 [+0.032, +0.089]) but loses on PC graphs. That is a hypothesis for a new pre-registered test, not a result. Every graph head sits far below BARO, which ranks metrics by how much they moved after the fault.
+Why CEI fails here: its entropy term measures how spread a metric's values are over the window, which does not tell you whether the metric's service caused the fault. Ranked alone, entropy falls below random. Without it, the centrality term beats full CEI on both graphs. In an exploratory check, added after the primary results, it also beats PageRank on Granger graphs (+0.060 [+0.032, +0.089]) but loses on PC graphs. I'd treat that as a hypothesis for a new pre-registered test. Every graph head sits far below BARO, which ranks metrics by how much they moved after the fault.
 
 ## Found along the way
 
 1. RCAEval's random-walk head ignores the graph: `pc_randomwalk` and `granger_randomwalk` give identical rankings on all 579 cases where both graphs exist, because `random_walk()` starts every node at score 0 and every transition falls back to uniform (`experiments/randomwalk_demo.py`). Reported as [phamquiluan/RCAEval#96](https://github.com/phamquiluan/RCAEval/issues/96).
-2. The Hugging Face release differs from the Zenodo cases `main.py` reads: one `inject_time.txt` is truncated, four cases are missing rows in the window, and RE1-SS and RE1-TT share no column names with the Zenodo files (`evidence/source_compare.json`). 355 of the 360 RE2 and RE3 cases match exactly. Reported as [phamquiluan/RCAEval#97](https://github.com/phamquiluan/RCAEval/issues/97).
+2. The Hugging Face release differs from the Zenodo cases `main.py` reads: one `inject_time.txt` is truncated, four Online Boutique and three RE1-SS/RE1-TT cases are missing rows in the window, and RE1-SS and RE1-TT share no column names with the Zenodo files (`evidence/source_compare.json`). 355 of the 360 RE2 and RE3 cases match exactly. Reported as [phamquiluan/RCAEval#97](https://github.com/phamquiluan/RCAEval/issues/97).
 
 ## Checks
 
-- The loader reproduces RCAEval's published BARO numbers on RE2-TT exactly (`results/baro_reproduction.csv`).
-- The cached-graph heads match RCAEval's end-to-end methods in 85 of 88 comparisons. The 3 differences are one Granger graph whose threshold edges depend on the CPU type (`results/equality_summary.json`).
+- The loader matches RCAEval's published BARO numbers on RE2-TT to the two decimals the README reports (`results/baro_reproduction.csv`).
+- The cached-graph heads match RCAEval's end-to-end methods in 85 of 88 comparisons on 10 RE1 cases. The 3 differences come from one Granger graph (`re1ob_adservice_cpu_1`) that changed when rebuilt on a different CPU type and matched when rebuilt on the same type (`results/equality_summary.json`).
 - The decision holds without the defective cases, without RE1-SS and RE1-TT, and on only the cases whose graph was built (`results/sensitivity_tests.csv`). One verdict moves: without RE1-SS and RE1-TT the hybrid on Granger graphs goes from a tie to a narrow loss.
 
 ## Layout and reproduction
@@ -52,7 +52,7 @@ modal run --detach experiments/modal_app.py --stage pipeline --suite ALL
 modal run experiments/modal_app.py --stage analyze
 ```
 
-The study cost about $8 of Modal CPU time. Data comes from the RCAEval Hugging Face release (MIT, revision `afeacb1`) and the Zenodo records 13305663 and 14590730 (CC BY 4.0). Graph building uses RCAEval's own PC (causal-learn) and Granger (statsmodels) code.
+The study cost about $8 on Modal (CPU only). Data comes from the RCAEval Hugging Face release (MIT, revision `afeacb1`) and the Zenodo records 13305663 and 14590730 (CC BY 4.0). Graph building uses RCAEval's own PC (causal-learn) and Granger (statsmodels) code.
 
 ## CEI reference
 
